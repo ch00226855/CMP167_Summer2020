@@ -61,3 +61,22 @@ Let's create a program that calculate the annual salary.
     - Indent lines the same amount.
     - Align items to reduce visual clutter.
     - Use a single space before and after any operators like =, +, *, or / to make statements more readable.
+- **Errors**:
+  - Syntax error
+  - Error message for missing a semicolon
+  - Unclear error message
+  - **Good practice**: fix one error at a time
+  - Compile-time error
+  - **Good practice**: compile the program after a few lines of code.
+---
+## 5 Minutes Break
+---
+## Quiz on Kahoot
+
+On most days, there will be one quiz at the beginning of the class and one quiz after the break. Quiz questions come from textbook exercises. Quiz scores count toward the final grad.
+---
+## Interactive Exercises on Zybooks
+---
+## Homework Assignment #1
+---
+## Office Hour
