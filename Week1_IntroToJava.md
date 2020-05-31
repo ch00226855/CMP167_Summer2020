@@ -70,9 +70,9 @@ Let's create a program that calculate the annual salary.
   - **Good practice**: compile the program after a few lines of code.
 ---
 ## 5 Minutes Break
+
 ---
 ## Quiz on Kahoot
-
 On most days, there will be one quiz at the beginning of the class and one quiz after the break. Quiz questions come from textbook exercises. Quiz scores count toward the final grad.
 ---
 ## Interactive Exercises on Zybooks
