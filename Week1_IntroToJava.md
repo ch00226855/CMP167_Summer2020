@@ -73,7 +73,7 @@ Let's create a program that calculate the annual salary.
 
 ---
 ## Quiz on Kahoot
-On most days, there will be one quiz at the beginning of the class and one quiz after the break. Quiz questions come from textbook exercises. Quiz scores count toward the final grad.
+On most days, there will be one quiz at the beginning of the class and one quiz after the break. Quiz questions come from textbook exercises. Quiz scores count toward the final grade.
 ---
 ## Interactive Exercises on Zybooks
 ---
