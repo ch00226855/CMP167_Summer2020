@@ -41,12 +41,17 @@ Let's create a program that calculate the annual salary.
 - **Variable**: The int wage statement creates an integer variable named wage. The wage = 20 statement assigns wage with 20.
 - **Basic output**:
   - The `System.out.print` method supports output. Outputting text is achieved via: 
-  ```System.out.print("desired text");```
+  ```java
+  System.out.print("desired text");
+  ```
   - Multiple output statements continue printing on the same output line.
   - `System.out.println` (note the ln at the end, short for "line"), starts a new output line after the outputted values, called a **newline**.
   - Outputting the value of a variable names `x` is achieved via: `System.out.print(x);`
   - The programmer can combine multiple output items using the `+` symbol.
-- **Basic input**: The following code at the top of a file enables the program to get input: `import java.util.Scanner;`
+- **Basic input**: The following code at the top of a file enables the program to get input: 
+  ```java
+  import java.util.Scanner;
+  ```
   - Getting input is achieved by first creating a Scanner object via the statement: `Scanner scnr = new Scanner(System.in);`
   - System.in corresponds to keyboard input. 
   - Then, given Scanner object `scnr`, the following statement gets an input value and assigns x with that value: `x = scnr.nextInt();`.
