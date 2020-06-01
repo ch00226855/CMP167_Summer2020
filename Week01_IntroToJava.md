@@ -57,7 +57,11 @@ There are several software applications that provides comprehensive facilities f
 	- Right click src, choose "New --> Java class"
 	- Enter the class name (for example, HelloWorld)
 - Write HelloWorld program
+	- **Declare the main method**: Type "main" and choose the first suggestion.
+	- **Use System.out.println**: Type "sout" and choose the first suggestion.
 - Run the program in IDE
+	- Click the triangle to the left of the src folder. HelloWorld will be revealed.
+	- Right click HelloWorld, choose "Run".
 ---
 ## A Quick Introduction to Java
 Let's create a program that calculate the annual salary.
