@@ -83,9 +83,23 @@ System.out.println(annualSalary);
   - `System.out.println` (note the ln at the end, short for "line"), starts a new output line after the outputted values, called a **newline**.
   - Outputting the value of a variable names `x` is achieved via: `System.out.print(x);`
   - The programmer can combine multiple output items using the `+` symbol.
+  ```java
+  System.out.println("The annual salary is:" + annualSalary + ".");
+  ```
 - **Basic input**: The following code at the top of a file enables the program to get input: 
   ```java
-  import java.util.Scanner;
+import java.util.Scanner; // importing Scanner from the util package.
+
+public class SalaryCalculator {
+    public static void main(String[] args) {
+	int hourlyRate;
+	Scanner scnr = new Scanner(System.in);
+	hourlyRate = scnr.nextInt(); // this will convert the keyboard input to an integer.
+	int annualSalary;
+	annualSalary = hourlyRate * 40 * 50;
+	System.out.println("The annual salary is:" + annualSalary + ".");
+    }
+}
   ```
   - Getting input is achieved by first creating a Scanner object via the statement: `Scanner scnr = new Scanner(System.in);`
   - System.in corresponds to keyboard input. 
