@@ -33,6 +33,15 @@ public class HelloWorld {
 
 ### Compile and Execute the Program
 - Open command prompt (Windows) or terminal (Mac & Linux)
+- Find `javac` and `java`. If you use the default installation path, these files should be located in `c:\Program Files\Java\jdk-14.0.1\bin`.
+- Grant access to `javac` and `java` from anywhere:
+	- In Windows search, type "System variables".
+	- In the Advanced tab, click "Environment variables".
+	- Click "Path" and click "Edit"
+	- Click "New" and enter the bin folder path.
+	- Click OK.
+	- Now try `java --version` on any folder, you should see the version displayed correctly.
+	
 - Compile with `javac`
 - Execute with `java`
 
