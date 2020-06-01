@@ -65,6 +65,13 @@ There are several software applications that provides comprehensive facilities f
 ---
 ## A Quick Introduction to Java
 Let's create a program that calculate the annual salary.
+```java
+int hourlyRate = 20;
+int annualSalary;
+annualSalary = hourlyRate * 40 * 50;
+System.out.print("The annual salary is:");
+System.out.println(annualSalary);
+```
 
 - **Variable**: The int wage statement creates an integer variable named wage. The wage = 20 statement assigns wage with 20.
 - **Basic output**:
