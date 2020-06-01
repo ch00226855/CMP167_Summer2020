@@ -41,9 +41,9 @@ public class HelloWorld {
 	- Click "New" and enter the bin folder path.
 	- Click OK.
 	- Now try `java --version` on any folder, you should see the version displayed correctly.
-	
-- Compile with `javac`
-- Execute with `java`
+- Navigate to the folder that store `HelloWorld.java`.
+- Compile with `javac`: Type `javac HelloWorld.java`. There will be a compiled file `HelloWorld.class`.
+- Execute with `java`: Type `java HelloWorld`. You should see `Hello World!`.
 
 ### Install Java Integrated Development Environment (IDE)
 There are several software applications that provides comprehensive facilities for Java development. In this class we will mainly use IntelliJ Idea as development enrionment, though most other IDE works too.
