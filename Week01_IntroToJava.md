@@ -87,9 +87,8 @@ System.out.println(annualSalary);
   System.out.println("The annual salary is:" + annualSalary + ".");
   ```
 - **Basic input**: The following code at the top of a file enables the program to get input: 
-  ```java
-import java.util.Scanner; // importing Scanner from the util package.
-
+```java
+import java.util.Scanner; 
 public class SalaryCalculator {
     public static void main(String[] args) {
 	int hourlyRate;
@@ -100,7 +99,7 @@ public class SalaryCalculator {
 	System.out.println("The annual salary is:" + annualSalary + ".");
     }
 }
-  ```
+```
   - Getting input is achieved by first creating a Scanner object via the statement: `Scanner scnr = new Scanner(System.in);`
   - System.in corresponds to keyboard input. 
   - Then, given Scanner object `scnr`, the following statement gets an input value and assigns x with that value: `x = scnr.nextInt();`.
