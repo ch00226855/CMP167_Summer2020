@@ -16,6 +16,14 @@
 - Use 64 bit version.
 
 ### Create HelloWorld.java in a Text Editor
+Type the following code in a text editor, and save it as `HelloWorld.java`.
+```java
+public class HelloWorld {
+	public static void main (String[] args) {
+		System.out.println("Hello World!");
+	}
+}
+```
 - Declare a public class with the same name as the file.
 - A **program** starts in `main()`, executing the statements within main's braces { }, one at a time.
 - Each **statement** typically appears alone on a line and ends with a semicolon, as English sentences end with a period.
