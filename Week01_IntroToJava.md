@@ -83,5 +83,8 @@ On most days, there will be one quiz at the beginning of the class and one quiz 
 ## Interactive Exercises on Zybooks
 ---
 ## Homework Assignment #1
+**Needed for homework:**
+- Data type `double`
+- Printing decimals with formatting
 ---
 ## Office Hour
