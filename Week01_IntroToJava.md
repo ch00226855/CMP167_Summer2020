@@ -48,7 +48,14 @@ public class HelloWorld {
 ### Install Java Integrated Development Environment (IDE)
 There are several software applications that provides comprehensive facilities for Java development. In this class we will mainly use IntelliJ Idea as development enrionment, though most other IDE works too.
 - Create a project
+	- Click "Create New Project"
+	- Make sure the JDK 14 is selected. Click "Next".
+	- Click "Next" again.
+	- Enter a project name (For example, CMP167_Week1). Note how Intellij Idea creates a folder to represent this project.
 - Create a .java file
+	- Click the triangle to the left of the project name. It will reveal a folder named src.
+	- Right click src, choose "New --> Java class"
+	- Enter the class name (for example, HelloWorld)
 - Write HelloWorld program
 - Run the program in IDE
 ---
