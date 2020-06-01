@@ -1,8 +1,11 @@
 # Week 2
 # Variables and Assignments
----
+
 ## Interger Variable
 - Declare a variable
+  - A **variable declaration** is a statement that declares a new variable, specifying the variable's name and type.
+  - Example: Declare an integer variable named userAge.
+  - Activity 2.2.1: A variable refers to a memory location
 - Assignment
 - Initializa a variable
 - Assignment with the same variable on both sides
