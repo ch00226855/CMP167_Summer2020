@@ -93,6 +93,7 @@ public class SalaryCalculator {
     public static void main(String[] args) {
 	int hourlyRate;
 	Scanner scnr = new Scanner(System.in);
+	System.out.println("Please enter the hourly rate as an integer:");
 	hourlyRate = scnr.nextInt(); // this will convert the keyboard input to an integer.
 	int annualSalary;
 	annualSalary = hourlyRate * 40 * 50;
@@ -128,11 +129,5 @@ public class SalaryCalculator {
 ## Quiz on Kahoot
 On most days, there will be one quiz at the beginning of the class and one quiz after the break. Quiz questions come from textbook exercises. Quiz scores count toward the final grade.
 ---
-## Interactive Exercises on Zybooks
----
-## Homework Assignment #1
-**Needed for homework:**
-- Data type `double`
-- Printing decimals with formatting
----
+
 ## Office Hour
