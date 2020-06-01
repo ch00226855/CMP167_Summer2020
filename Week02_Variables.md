@@ -1,6 +1,13 @@
 # Week 2
 # Variables and Assignments
 
+## Interactive Exercises on Zybooks
+
+## Homework Assignment #1
+**Needed for homework:**
+- Data type `double`
+- Printing decimals with formatting
+
 ## Interger Variable
 - Declare a variable
   - A **variable declaration** is a statement that declares a new variable, specifying the variable's name and type.
