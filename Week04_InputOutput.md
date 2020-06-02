@@ -1,4 +1,4 @@
-# Week 3
+# Week 4
 # Console Input / Output
 ## Output Streams
 - An **OutputStream** is a class that supports output data to a screen, file, or elsewhere.
