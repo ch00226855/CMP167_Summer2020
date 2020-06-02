@@ -10,7 +10,7 @@
 - Watch Participation Activity 2.1.2: Variables and assignments.
 - Activity 2.1.3: Valid assignments.
 
-## Interger Variable
+## Integer Variable
 - Declare a variable
   - A **variable declaration** is a statement that declares a new variable, specifying the variable's name and type.
   - Example: Write a program that asks the user to enter the year of birth, and then output the user age.
