@@ -60,18 +60,26 @@
 ## Arithmetic Expressions
 - +, -, *, /
 - Parenthesis
-- Integer division
-- Modulo operator
+  -Example: (In Math) [(a + b) * c + d] * 2, (In Java) ((a + b) * c + d) * 2.
+- Integer division: (In Math) Dividing an integer with another integer does not always result in an int. (In Java) The non-integer results will be rounded down.
+- Modulo operator:
+  - decide even or odd: `num % 2`
+  - extract the last digit: `num % 10`
+  - determine the day of week: `(today - sunday) % 7`
 - Compound operators +=, -=, *=, /=, %=.
+- ++(increment) and --(decriment): it is recommended to use them in a separate statement.
 - No commas allowed
 - Challenge 2.5.1: Compute an expression
+  - `finalResult= (num1 + num 2) / 3;`
 - Challenge 2.5.2: Total cost
+  - `totalCost = (numDrinks * 2) + (numTacos * 3);`
 
 ## Floating-Point Numbers
 - Division by zero
 - Formatting floating-point output
 - Scientific notations
 - Challenge 2.7.1: Sphere volume.
+  - `sphereVolume = (4.0 / 3.0) * piVal * (sphereRadius * sphereRadius * sphereRadius);`
 
 ## Homework Assignment #1
 
