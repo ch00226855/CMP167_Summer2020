@@ -14,6 +14,19 @@
 - Declare a variable
   - A **variable declaration** is a statement that declares a new variable, specifying the variable's name and type.
   - Example: Write a program that asks the user to enter the year of birth, and then output the user age.
+```java
+        int birthYear; 
+        int userAge; 
+
+
+        Scanner scnr = new Scanner(System.in); // create a scanner object
+        System.out.println("Please enter the year of birth:");
+        birthYear = scnr.nextInt();
+        
+        userAge = 2020 - birthYear;
+        
+        System.out.println("Your age is: " + userAge + ".");
+  ```
   - Activity 2.2.1: A variable refers to a memory location
 - Assignment
   - An **assignment statement** assigns the variable on the left-side of the = with the current value of the right-side expression.
@@ -33,6 +46,8 @@
   - An identifier must:
     - be a sequence of letters (a-z, A-Z), underscore (_), dollar signs ($), and digits (0-9)
     - **not** start with a digit
+    - What is not allowed: space, +-*/!#%^&, 
+    - Bad examples: 1stName, lucky!
    - Identifiers are **case sensitive**.
    - Cannot use **keywords** as identifiers. A keyword is a word with special meaning in the language, such as public, static, void.
    - Table 2.3.1: Java reserved words / keywords.
