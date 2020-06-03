@@ -18,6 +18,11 @@ A **method** is a list of statements executed by invoking the method's name. A *
 - `Math.random()`: returns a random number between 0.0 and 0.9999....
 - Activity 2.10.6: Method calls in arguments.
 - Challenge 2.10.3: Using math functions to calculate the distance between two points.
+```java
+xDist = x2 - x1;
+yDist = y2 - y1;
+pointsDistance = Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2));
+```
 
 ## Type Conversions
 - **Implicit Conversions**: if a type conversion is needed and can be done without loss of precision, the compiler will perform it automatically.
@@ -29,6 +34,9 @@ A **method** is a list of statements executed by invoking the method's name. A *
   - Exercise: Family 1 has 3 children. Family 2 has 4 children. Family 3 has 1 child. Write a program that calculates the average number of childern per family.
   - Common error: accidentally perform integer division when floating-point division was intended.
   - Activity 2.12.5: Type casting.
+  ```java
+  avgKids = (double)(numKidsA + numKidsB + numKidsC) / numFamilies;
+  ```
   
 ## Binary Numbers (Reading Assignment)
 
