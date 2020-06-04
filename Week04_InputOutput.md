@@ -59,3 +59,16 @@ public static void main(String[] args) {
         System.out.println("Last Name: " + lastName);
     }
 ```
+
+## Tips for Homework 2:
+- Use `length()` to get the length of a string:
+```java
+String word = "Sunday";
+int len = word.length();
+System.out.println("Length: " + len);
+```
+- Use `indexOf()` to get the position of a character (or a substring)
+```java
+int positionA = word.indexOf('a');
+System.out.println("Position of a:" + positionA);
+```
