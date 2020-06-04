@@ -42,3 +42,20 @@ Formatting floating-point numbers commonly requires sub-specifiers
 A programmer can associate a Scanner object with a String rather than with the keyboard (standard input).
 - Figure 3.31: Reading from a String using a Scanner object.
 - Exercise 3.3.2: Reading from a string.
+```java
+public static void main(String[] args) {
+        String toBeParsed = "First Name: Ron      | Last Name: Weasley";
+        Scanner scnr = new Scanner(toBeParsed);
+        String firstName, lastName;
+
+        scnr.next();
+        scnr.next();
+        firstName = scnr.next();
+        System.out.println("First Name: " + firstName);
+        scnr.next(); // This will extract "|"
+        scnr.next(); // This will extract "Last"
+        scnr.next(); // This will extract "Name:"
+        lastName = scnr.next(); // This will extract "Porter"
+        System.out.println("Last Name: " + lastName);
+    }
+```
