@@ -8,7 +8,7 @@
   - primitive types
   - reference types
 
-## Output Streams
+## Input Streams
 - An **InputStream** is a class that receives data from an input device such as keyboard, mouse, or touchscreen.
 - `System.in` is a predefined input stream object reference that is associated with a system's standard input, which is usually a keyboard.
 - **Methods**: `nextInt`, `next`, `nextLine`, `nextDouble`.
