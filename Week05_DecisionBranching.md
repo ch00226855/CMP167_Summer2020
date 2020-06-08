@@ -12,6 +12,11 @@ if (condition) {
 }
 ```
 - **Example**: write a program that asks for user's age. If the age is greater than 200, output "Something doesn't look right."
+```java
+if (userAge > 200) {
+    System.out.println("Something does not look right.");
+}
+```
 - **Exercise** 4.2.2: If statements 
 
 ## If-Else Statements
@@ -26,6 +31,28 @@ if (condition) {
 }
 ```
 - **Example:** Write a program that asks the user today's date. If user's answer is correct, output "Correct!"; otherwise, output "Wrong answer. Check again!".
+```java
+if (userInput.equals("June 8th")) {
+    System.out.println("Correct!");
+} else if (userInput.equals("06/08")) {
+    System.out.println("Correct!");
+} else {
+    System.out.println("Wrong answer!");
+}
+```
+Or use a switch block:
+```java
+switch (userInput) {
+    case "June 8th":
+        System.out.println("Correct!");
+        break;
+    case "06/08":
+        System.out.println("Correct!");
+        break;
+    default:
+        System.out.println("Wrong answer!");
+}
+```
 - **Exercise** 4.2.5: Writing an if-else statement.
 
 ## Multiple If-Else Statements
@@ -52,12 +79,49 @@ if (condition1) {
   - if input is 50, output "gold anniversary"
   - if input is 60, output "diamond anniversary"
   - for other input, output "nothing special this year"
+```java
+if (yearsMarried == 1) {
+    System.out.println("This year would be your paper anniversary.");
+} else if (yearsMarried == 10) {
+    System.out.println("This year would be your tin anniversary.");
+} else if (yearsMarried == 25) {
+    System.out.println("This year would be your silver anniversary.");
+} else if (yearsMarried == 50) {
+    System.out.println("This year would be your gold anniversary.");
+} else if (yearsMarried == 60) {
+    System.out.println("This year would be your diamond anniversary.");
+} else {
+    System.out.println("Nothing is special this year.");
+}
+```
+Or use a switch block:
+```java
+switch (yearsMarried) {
+    case 1:
+        System.out.println("This year would be your paper anniversary.");
+        break;
+    case 10:
+        System.out.println("This year would be your tin anniversary.");
+        break;
+    case 25:
+        System.out.println("This year would be your silver anniversary.");
+        break;
+    case 50:
+        System.out.println("This year would be your gold anniversary.");
+        break;
+    case 60:
+        System.out.println("This year would be your diamond anniversary.");
+        break;
+    default:
+        System.out.println("Nothing is special this year.");
+}
+```
 - **Common Error**: forgetting curly brackes `{}` for a branch.
 - **Challenge** 4.2.4: If-else statement: Fix errors.
 
 ## Equality and Relational Operators
 - == (equal), != (not equal)
-- >, <, >=, <=
+- \>, <, >=, <=
 - Comparing characters
 - Comparing strings: use `equals()` method
 - comparing floating-point numbers: provide an error bound
@@ -68,16 +132,3 @@ if (condition1) {
 - **Example**: Detecting if a value is between 10 and 15.
 - Table 4.8.1: Precedence rules for arithmetic, logical, and relational operators.
 - **Exercise 4.8.2**: Order of evaluation
-
-## String Methods
-- Equality: `equals()`, `equalsIgnoreCase()`
-- Relational: `compareTo()`, `compareToIgnoreCase()`
-- Access operations: `charAt()`, `indexOf()`
-- Length of a string: `length()`
-- Concatenate strings: `+`
-
-## Character operations
-- Table 4.14.1: Character methods
-- Each method must prepend Character.
-- static methods and dynamic methods
-
