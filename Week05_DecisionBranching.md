@@ -55,6 +55,29 @@ if (condition1) {
 - **Common Error**: forgetting curly brackes `{}` for a branch.
 - **Challenge** 4.2.4: If-else statement: Fix errors.
 
-## Nested If-Else Statements
-- A branch's statements can include any valid statements, including another if-else statement, which are known as **nested if-else** statements.
-- **Example**: 
+## Equality and Relational Operators
+- == (equal), != (not equal)
+- >, <, >=, <=
+- Comparing characters
+- Comparing strings: use `equals()` method
+- comparing floating-point numbers: provide an error bound
+
+## Logical Operators
+- AND, OR, NOT
+- &&, ||, !
+- **Example**: Detecting if a value is between 10 and 15.
+- Table 4.8.1: Precedence rules for arithmetic, logical, and relational operators.
+- **Exercise 4.8.2**: Order of evaluation
+
+## String Methods
+- Equality: `equals()`, `equalsIgnoreCase()`
+- Relational: `compareTo()`, `compareToIgnoreCase()`
+- Access operations: `charAt()`, `indexOf()`
+- Length of a string: `length()`
+- Concatenate strings: `+`
+
+## Character operations
+- Table 4.14.1: Character methods
+- Each method must prepend Character.
+- static methods and dynamic methods
+
