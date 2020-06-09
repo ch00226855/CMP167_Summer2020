@@ -30,6 +30,19 @@ if (isReallyHot) {
 - **Example**: Check if a year is a leap year. [How to check for leap year](https://en.wikipedia.org/wiki/Leap_year)
   - A leap year must be divisible by 4.
   - If a year is divisible by 100 but *not* divisible by 400, then it is *not* a leap year.
+```java
+boolean divisibleBy4 = (year % 4 == 0);
+boolean divisibleBy100 = (year % 100 == 0);
+boolean divisibleBy400 = (year % 400 == 0);
+
+if (!divisibleBy4) {
+    System.out.println("Not a leap year.");
+} else if (divisibleBy100 && !divisibleBy400) {
+    System.out.println("Not a leap year.");
+} else {
+    System.out.println("A leap year.");
+}
+```
 - Challenge 4.11.1: Using Boolean
 
 ## String Methods
