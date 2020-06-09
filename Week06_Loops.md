@@ -11,6 +11,9 @@
   - If 70 < temperature < 80 and humidity > 0.5, turn on the air conditioner.
   - If 70 < temperature < 80 and humidity < 0.5, turn on the evaporate cooler.
   - Otherwise, keep both off.
+- **Example**: Check if a year is a leap year. [How to check for leap year](https://en.wikipedia.org/wiki/Leap_year)
+  - A leap year must be divisible by 4.
+  - If a year is divisible by 100 but *not* divisible by 400, then it is *not* a leap year.
 - Challenge 4.11.1: Using Boolean
 
 ## String Methods
