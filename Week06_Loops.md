@@ -27,6 +27,7 @@
 ## Character operations
 - Table 4.14.1: Character methods
 - Each method must prepend Character.
+- **Example"** Write a program that asks the user for a word, and then output the capitalized word.
 - static methods and instance methods
   - Static methods associate with a class, such as `Math.pow()` or `Character.isDigit()`
   - Instance methods associate with an object, such as `scnr.nextInt()`
@@ -64,8 +65,8 @@ for (initial value; condition; update) {
 - **Example 3:** Write a for loop where the loop index increments from 0 to 9. Print the square of the loop index during each iteration.
 - **Example 4:** Print the first 10 powers of 2: 1, 2, 4, 8, ...
 - **Example 5:** Write a for loop where the loop index increments from 0 to 20, only covering even numbers. Print the loop index during each iteration.
-- **Example 6:** Write a for loop where the loop index increments from 1 to 19, only covering odd numbers. Print the loop index during each iteration.
-- **Example 7:** Write a for loop where the loop index *decrements* from 9 to 0. Print the loop index during each iteration.
-- **Example 8:** Write a for loop where the loop index *decrements* as 90, 80, 70, ..., 0. Print the loop index during each iteration.
+- **Example 6:** Write a for loop where the loop index increments from -11 to 19, only covering odd numbers. Print the loop index during each iteration and calculate the sum of these numbers.
+- **Example 7:** Write a for loop where the loop index *decrements* from 9 to 0. Print the loop index during each iteration and calculate the sum of these numbers.
+- **Example 8:** Write a for loop where the loop index *decrements* as 90, 80, 70, ..., 0. Print the loop index during each iteration and calculate the sum of these numbers..
 - **Example 9:** Write a for loop where the loop index *decrements* from 9 to 0, while the loop still prints 90, 80, ..., 0
 - **Example 10:** Use while loops to achieve the same output from Example 1 - 9.
