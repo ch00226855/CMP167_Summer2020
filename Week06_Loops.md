@@ -59,11 +59,26 @@ if (!divisibleBy4) {
 ## Character operations
 - Table 4.14.1: Character methods
 - Each method must prepend Character.
-- **Example"** Write a program that asks the user for a word, and then output the capitalized word.
 - static methods and instance methods
   - Static methods associate with a class, such as `Math.pow()` or `Character.isDigit()`
   - Instance methods associate with an object, such as `scnr.nextInt()`
   - Instance methods from different objects will behave differently.
+- **Example"** Write a program that asks the user for a word, and then output the capitalized word.
+```java
+// 1. extract the first letter --> charAt(0)
+char firstLetter = userInput.charAt(0);
+// 2. convert the letter to uppercase --> toUpperCase()
+char firstLetterUpper = Character.toUpperCase(firstLetter);
+// 3. extract the substring from index 1 to the end --> substring()
+int stringLength = userInput.length();
+String subString = userInput.substring(1, stringLength);
+// OR
+// String subString = userInput.substring(1);
+// 4. concatenate the uppercase letter with the rest of the string: --> +
+String newString = firstLetterUpper + subString;
+// Output the new string
+System.out.println(newString);
+```
 - Challenge 4.14.1: String with digit
 
 # Loops
