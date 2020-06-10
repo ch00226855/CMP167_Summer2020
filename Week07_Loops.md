@@ -11,6 +11,19 @@ for (initial value; condition; update) {
 }
 ```
 - **Example 1:** Print the same sentence 10 times.
+```java
+for (int i = 0; i < 10; i++) {
+    System.out.println("This sentence will repeat 10 times.");
+}
+```
+If we use while loop:
+```java
+int i = 0;
+while (i < 10) {
+    System.out.println("This sentence will repeat 10 times.");
+    i++;
+}
+```
 - **Example 2:** Write a for loop where the loop index increments from 0 to 9. Print the loop index during each iteration.
 - **Example 3:** Write a for loop where the loop index increments from 0 to 9. Print the square of the loop index during each iteration.
 - **Example 4:** Print the first 10 powers of 2: 1, 2, 4, 8, ...
