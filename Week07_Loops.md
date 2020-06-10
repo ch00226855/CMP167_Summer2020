@@ -25,8 +25,23 @@ while (i < 10) {
 }
 ```
 - **Example 2:** Write a for loop where the loop index increments from 0 to 9. Print the loop index during each iteration.
+```java
+for (int i = 0; i < 10; i++) {
+    System.out.println("Current loop index: " + i);
+}
+```
 - **Example 3:** Write a for loop where the loop index increments from 0 to 9. Print the square of the loop index during each iteration.
+```java
+for (int i = 0; i < 10; i++) {
+    System.out.print(i*i + " ");
+}
+```
 - **Example 4:** Print the first 10 powers of 2: 1, 2, 4, 8, ...
+```java
+for (int i = 0; i < 10; i++) {
+    System.out.printf("%.0f ", Math.pow(2, i));
+}
+```
 - **Example 5:** Write a for loop where the loop index increments from 0 to 20, only covering even numbers. Print the loop index during each iteration.
 - **Example 6:** Write a for loop where the loop index increments from -11 to 19, only covering odd numbers. Print the loop index during each iteration and calculate the sum of these numbers.
 - **Example 7:** Write a for loop where the loop index *decrements* from 9 to 0. Print the loop index during each iteration and calculate the sum of these numbers.
