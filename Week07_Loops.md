@@ -92,6 +92,22 @@ for (int i = 0; i < someString.length(); i++) {
 }
 ```
 - **Example:** Count the number of digits in a string.
+```java
+int count = 0;
+char c;
+boolean cIsDigit;
+for (int i = 0; i < stringLength; i++) {
+    // assign the index i character to variable c
+    c = userInput.charAt(i);
+    // apply method isDigit() to c, and store the result.
+    cIsDigit = Character.isDigit(c);
+    // increment count if c is a digit.
+    if (cIsDigit) {
+        count++;
+    }
+}
+System.out.println("Number of digits: " + count);
+```
 - Multiple iterations using a while loop
 - **Example:** Remove extra spaces in a string
 
