@@ -66,7 +66,15 @@ for (int i = 9; i >= 0; i--) {
 }
 System.out.println("Sum: " + sum);
 ```
-- **Example 8:** Write a for loop where the loop index *decrements* as 90, 80, 70, ..., 0. Print the loop index during each iteration and calculate the sum of these numbers..
+- **Example 8:** Write a for loop where the loop index *decrements* as 90, 80, 70, ..., 0. Print the loop index during each iteration and calculate the sum of these numbers.
+```java
+sum = 0;
+for (int i = 90; i >= 0; i = i - 10) {
+    System.out.println(i);
+    sum = sum + i;
+}
+System.out.println("Sum: " + sum);
+```
 - **Example 9:** Write a for loop where the loop index *decrements* from 9 to 0, while the loop still prints 90, 80, ..., 0
 - **Example 10:** Use while loops to achieve the same output from Example 1 - 9.
 
