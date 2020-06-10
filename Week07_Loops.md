@@ -49,6 +49,14 @@ for (int i = 0; i <= 20; i += 2) {
 }
 ```
 - **Example 6:** Write a for loop where the loop index increments from -11 to 19, only covering odd numbers. Print the loop index during each iteration and calculate the sum of these numbers.
+```java
+int sum = 0;
+for (int i = -11; i < 20; i += 2) {
+    System.out.println(i + " ");
+    sum = sum  + i; // add current i to sum
+}
+System.out.println("Sum: " + sum);
+```
 - **Example 7:** Write a for loop where the loop index *decrements* from 9 to 0. Print the loop index during each iteration and calculate the sum of these numbers.
 - **Example 8:** Write a for loop where the loop index *decrements* as 90, 80, 70, ..., 0. Print the loop index during each iteration and calculate the sum of these numbers..
 - **Example 9:** Write a for loop where the loop index *decrements* from 9 to 0, while the loop still prints 90, 80, ..., 0
