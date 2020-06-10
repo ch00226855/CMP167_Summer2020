@@ -1,6 +1,26 @@
 # Week 7
 # Loops (Continued)
 
+## For Loops
+- A loop commonly must iterate a specific number of times, such as 10 times. Though achievable with a while loop, that situation is so common that a special kind of loop exists. 
+- A **for loop** is a loop whose number of iterations can be easily controlled.
+- Format:
+```java
+for (initial value; condition; update) {
+    loop body
+}
+```
+- **Example 1:** Print the same sentence 10 times.
+- **Example 2:** Write a for loop where the loop index increments from 0 to 9. Print the loop index during each iteration.
+- **Example 3:** Write a for loop where the loop index increments from 0 to 9. Print the square of the loop index during each iteration.
+- **Example 4:** Print the first 10 powers of 2: 1, 2, 4, 8, ...
+- **Example 5:** Write a for loop where the loop index increments from 0 to 20, only covering even numbers. Print the loop index during each iteration.
+- **Example 6:** Write a for loop where the loop index increments from -11 to 19, only covering odd numbers. Print the loop index during each iteration and calculate the sum of these numbers.
+- **Example 7:** Write a for loop where the loop index *decrements* from 9 to 0. Print the loop index during each iteration and calculate the sum of these numbers.
+- **Example 8:** Write a for loop where the loop index *decrements* as 90, 80, 70, ..., 0. Print the loop index during each iteration and calculate the sum of these numbers..
+- **Example 9:** Write a for loop where the loop index *decrements* from 9 to 0, while the loop still prints 90, 80, ..., 0
+- **Example 10:** Use while loops to achieve the same output from Example 1 - 9.
+
 ## Loops and Strings
 - Iterating through a string with a for loop
 - Format:
