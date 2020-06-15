@@ -7,7 +7,7 @@ A method's block of statements may include branches, loops, and other statements
 - **Example**: Write a method that checks if a given year is a leap year.
 - **Example**: Write a method that calculates the sum of all integers in a range.
 - **Break and continue**
-- Rewrite Homework 2-4 with modular design.
+- Rewrite Homework 4-3 with modular design.
 
 # Midterm Review
 - 1. Go over weekly notes.
