@@ -81,9 +81,9 @@ public class DateConverter {
     // }
     public static String monthConverter (int monthNum) {
         if (monthNum == 1) {
-            return "Janurary";
+            return "January";
         } else if (monthNum == 2) {
-            return "Feburary";
+            return "February";
         } else if (monthNum == 3) {
             return "March";
         } else if (monthNum == 4) {
