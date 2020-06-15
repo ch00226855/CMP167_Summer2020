@@ -11,6 +11,8 @@ public class DateConverter {
         int monthNumber = scnr.nextInt();
         int date = scnr.nextInt();
         int year = scnr.nextInt();
+        String dayName = dayConverter(dayNumber);
+        String monthName = monthConverter(monthNumber);
 
         // 2. Check if the numbers are valid
         if (!isValidDayNumber(dayNumber)) {// is not a valid day number
@@ -25,11 +27,25 @@ public class DateConverter {
             return; // terminate the program immediately
         }
 
-        // TODO: check if date is valid
+        if (!isValidDateType1(date)) {// date is not within 1 ... 31
+            // print error message
+            System.out.println("Invalid date number: " + date + 
+                    ", please enter a number from 1..31.");
+            return;
+        } else if (!isValidDateType2(monthNumber, date)) {// date is 31 for some months
+            // print error message
+            System.out.println("Invalid date: " + monthName + 
+                    ", does not have " + date + " days, please enter a valid date.");
+            return;
+        } else if (!isValidDateType3(year, monthNumber, date)) {// date is Feb. 29 in a common year
+            // print error message
+            System.out.println("Invalid date: " + year + 
+            " is not a leap year, February does not have " + date + 
+            " days, please enter a valid date.");
+            return;
+        }
 
         // 3. Print the date
-        String dayName = dayConverter(dayNumber);
-        String monthName = monthConverter(monthNumber);
         System.out.println(
             dayNumber + " " + monthNumber + " " + date + " " + year +
             " is " + dayName + " " + monthName + " " + date + ", " + year);
@@ -151,6 +167,35 @@ public class DateConverter {
         }
         // OR
         // return (monthNumber >= 1 && monthNumber <= 12);
+    }
+
+    public static boolean isValidDateType1(int date) {
+        if (date >= 1 && date <= 31) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean isValidDateType2(int monthNumber, int date) {
+        // some months do not have 31st.
+        if (monthNumber == 2 && (date == 30 || date == 31)) {
+            return false;
+        } else if ((monthNumber == 4 || monthNumber == 6 || monthNumber == 9 ||
+                monthNumber == 11) && date == 31) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public static boolean isValidDateType3(int year, int monthNumber, int date) {
+        // A common year does not have Feb. 29.
+        if (!checkLeapYear(year) && monthNumber == 2 && date == 29) {
+            return false;
+        } else {
+            return true;
+        }
     }
     
 }
