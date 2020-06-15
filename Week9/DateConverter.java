@@ -1,6 +1,38 @@
+import java.util.Scanner;
+
 public class DateConverter {
 
     public static void main(String[] args) {
+
+        // 1. load four numbers from user
+        Scanner scnr = new Scanner(System.in);
+        System.out.println("Enter 4 integers representing dayNumber monthNumber date year:");
+        int dayNumber = scnr.nextInt();
+        int monthNumber = scnr.nextInt();
+        int date = scnr.nextInt();
+        int year = scnr.nextInt();
+
+        // 2. Check if the numbers are valid
+        if (!isValidDayNumber(dayNumber)) {// is not a valid day number
+            System.out.println("Invalid day number: " + dayNumber + 
+                    ", please enter a number from 1..7.");
+            return; // terminate the program immediately
+        }
+
+        if (!isValidMonthNumber(monthNumber)) {// is not a valid month number
+            System.out.println("Invalid month number: " + monthNumber +
+                                ", please enter a number from 1..12.");
+            return; // terminate the program immediately
+        }
+
+        // TODO: check if date is valid
+
+        // 3. Print the date
+        String dayName = dayConverter(dayNumber);
+        String monthName = monthConverter(monthNumber);
+        System.out.println(
+            dayNumber + " " + monthNumber + " " + date + " " + year +
+            " is " + dayName + " " + monthName + " " + date + ", " + year);
         
     }
 
@@ -97,6 +129,28 @@ public class DateConverter {
             return true;
         }
 
+    }
+
+    // Write a method that checks if dayNumber is between 1 and 7
+    public static boolean isValidDayNumber(int dayNumber) {
+        if (dayNumber >= 1 && dayNumber <= 7) {
+            return true;
+        } else {
+            return false;
+        }
+        // OR do this:
+        // return (dayNumber >= 1 && dayNumber <= 7);
+    }
+
+    // Write a method that checks if monthNumber is between 1 and 12
+    public static boolean isValidMonthNumber(int monthNumber) {
+        if (monthNumber >= 1 && monthNumber <= 12) {
+            return true;
+        } else {
+            return false;
+        }
+        // OR
+        // return (monthNumber >= 1 && monthNumber <= 12);
     }
     
 }
