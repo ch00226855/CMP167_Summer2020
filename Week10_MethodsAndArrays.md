@@ -15,7 +15,7 @@ Testing a large program can be hard because bugs may appear anywhere in the prog
 A programmer commonly needs to maintain a list of items. An **array** is an ordered list of items of a given data type. Each item in an array is called an **element**.
 
 ## Array Declarations
-- Format: `dataType[] = arrayName = new dataType[length];`
+- Format: `dataType[] arrayName = new dataType[length];`
 - The array declaration uses [ ] symbols after the data type to indicate that the variable is an array reference.
 - The **new operator** creates space in memory to store the array with the specific number of elements.
 - Access an array element: `arrayName[index]`
