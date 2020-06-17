@@ -9,7 +9,7 @@ Testing a large program can be hard because bugs may appear anywhere in the prog
 
 ## Method Name Overloading
 - Sometimes it is beneficial to have two methods with the same name but differing in the number or types of parameters, known as **method name overloading** or just **method overloading**.
-- **Example:** Write a program with methods `datePrint(int currDay, int currMonth)` and `datePrint(int currDay, String currMonth)`. Use the methods to print `07/30/2020` and `July 30, 2020`.
+- **Example:** Write a program with methods `datePrint(int currDay, int currMonth)` and `datePrint(int currDay, String currMonth)`. Use the methods to print `07/30` and `July 30`.
 
 # Arrays
 A programmer commonly needs to maintain a list of items. An **array** is an ordered list of items of a given data type. Each item in an array is called an **element**.
