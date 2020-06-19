@@ -6,6 +6,17 @@ write a public static method named replaceLast that takes in a String s and a ch
 
 public class MidtermProblems {
 
+    public static void main(String[] args) {
+       // Test evens() method
+    //    System.out.println(evens(8));
+    //    System.out.println(evens(7));
+
+        // Test sumAll() method
+        System.out.println(sumAll(2, 5));
+        System.out.println(sumAll(-4, 3));
+        System.out.println(sumAll(3, 3));
+    }
+
     public static String replaceLast(String s, char c) {
 
         // Special case 1: s is a null String
@@ -64,6 +75,91 @@ If there is NO difference between the two numbers, return “EQUAL”
 
         // 4. return the string
 
+    }
+
+    public static void differenceTest() {
+        int a;
+        int b;
+        String outcome;
+        String expected;
+        // Case 1: a = 5, b = 3
+        a = 5;
+        b = 3;
+        outcome = difference(a, b);
+        expected = "Small Difference 2";
+        System.out.println("Input: " + a + ", " + b);
+        System.out.println("Output: " + outcome);
+        System.out.println("Test passed? " + outcome.equals(expected));
+
+        // Case 2:
+        a = -10;
+        b = 20;
+        outcome = difference(a, b);
+        expected = "Big Difference -30";
+        System.out.println("Input: " + a + ", " + b);
+        System.out.println("Output: " + outcome);
+        System.out.println("Test passed? " + outcome.equals(expected));        
+    }
+
+    // Problem 3:
+    // Write a public static method named evens that takes in 1 argument int a,
+    // and returns a String containing all even numbers, separated by a space, 
+    // from 0 up to that number inclusive. Remember to assure the argument a is 
+    // positive. If the argument a is negative, return a String that says “NONE”
+    public static String evens(int a) {
+        if (a < 0) {
+            return "NONE";
+        }
+        // if Java gets here, a will be at least 0.
+        String output = "";
+        for (int i = 0; i <= a; i += 2) {
+            // append i and a space to the output string
+            // if i is the last value, don't append the space
+            // find the expression if i is the last value in the sequence
+            // a = 8: 0 2 4 6 8 --> 8 is the last value
+            // a = 6: 0 2 4 6   --> 6 is the last value
+            // a = 7: 0 2 4 6   --> 6 is the last value
+            // a = 5: 0 2 4     --> 4 is the last value
+            if (i == a || i == a - 1) {
+                output = output + i;
+            } else {
+                output = output + i + " ";
+            }
+        }
+        return output;
+    } 
+
+    // Problem 4:
+    /* Write a public static method name sumAll that takes in 2 arguments int a, int b,
+     and returns the sum of all values between those two numbers inclusive. Remember a 
+     can be less than b, but b might be less than a, or they may be equal.
+     */
+    public static int sumAll(int a, int b) {
+
+        // if a == b, return a + b
+        if (a == b) {
+            return a + b;
+        }
+
+        // if a < b, sum all values from a to b.
+        int sum = 0;
+        if (a < b) {
+            for (int i = a; i <= b; i++) {
+                sum += i; // sum = sum + i;
+            }
+            return sum;
+        }
+
+        // if b < a, sum all values from b to a.
+        sum = 0;
+        if (a > b) {
+            for (int i = b; i <= a; i++){
+                sum += i;
+            }
+            return sum;
+        }
+
+        return -999999;
     }
     
 }
